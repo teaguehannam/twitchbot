@@ -1,0 +1,80 @@
+
+header {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 0 0 auto;
+	position: fixed;
+	right: 0;
+	padding: 0.3rem;
+	border-radius: 0 0 0 0.9rem;
+	z-index: 5;
+	background: linear-gradient(180deg,
+		rgba(0,0,0,1) 0%,
+		rgba(0,0,0,0.8) 90%,
+		rgba(0,0,0,0.6) 96%,
+		rgba(0,0,0,0) 100%);
+
+	h3, button, input {
+		line-height: 2rem;
+		border: unset;
+	}
+	h3 {
+		color: white;
+		padding: 0 0.6rem;
+	}
+	input {
+		padding: 0;
+	}
+	button {
+		color: rgba(129,129,129,0.5);
+
+		&.Autoscroll {
+			color: green;
+		}
+	}
+}
+
+main {
+	height: 100vh;
+	overflow: auto;
+	display: flex;
+	flex-direction: column-reverse;
+
+	section {
+		display: grid;
+		grid-gap: 2rem;
+		padding: 2rem 0;
+		max-width: 1200px;
+		margin: 0 auto;
+
+		.Row {
+			background: rgba(252,252,252,0.6);
+			backdrop-filter: blur(6px);
+			border-radius: 0.6rem;
+			padding: 1.2rem 0.6rem;
+			width: 80%;
+			max-width: 900px;
+			margin: 0 2vw;
+			cursor: default;
+
+			&:hover {
+				background: rgba(252,252,252,0.9);
+				h5 {
+					color: rgba(0,0,0,1);
+				}
+			}
+
+			h5 {
+				font-size: 1.5rem;
+				padding: 0 0.5rem;
+				color: rgba(0,0,0,0.6);
+			}
+
+			p {
+				font-size: 1.2rem;
+			}
+		} // Row
+	}
+}
