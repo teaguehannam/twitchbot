@@ -1,1 +1,3 @@
-# chat
+# Chat
+
+### Centralized interface for chatrooms
